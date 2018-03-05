@@ -32,13 +32,10 @@ driver.manage().window().maximize();
         driver.close();
     }
 
-    @Test
-    public void goHomePage(){
-        driver.get("Https:google.com");
-    }
+    
 
     @Test
-    public void checkLoginWithValidUser() throws InterruptedException {
+    public void checkLoginWithValidUser()  {
         PageNavigator nav = new PageNavigator(driver);
         HomePage onHomePage = nav.getHomePage();
         LogInPage onLogInPage =onHomePage.clickLogInbutton();
